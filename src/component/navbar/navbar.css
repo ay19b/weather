@@ -162,13 +162,18 @@
 .left-nav.scd .list-menu svg{
 	margin-left: 1%;
 }
-
+@media screen and (max-width:1000px){
+    .right-nav, .right-nav .alsoft {
+        margin-left: -2%;
+    }
+}
 @media screen and (max-width:900px){
     .nav{
         display: none;
     }
     .nav.scd{
         display:flex;
+        justify-content: space-between;
     }
 }
 @media screen and (max-width:768px){
@@ -193,6 +198,9 @@
 .scd-nav svg {
     font-size: 2rem;
     margin-left: -6%;
+}
+.xbox.scd {
+    margin-left: -4.3%;
 }
 }
 @media screen and (max-width:320px){

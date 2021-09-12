@@ -88,9 +88,18 @@
 
 @media screen and (max-width:480px){
     
-.awssld__content div img {
-        width: 52rem;
-}
+    .awssld__wrapper {
+        height: Calc(30rem + 13vw) !important;
+    }
+    .awssld__content div img {
+        width: 30rem;
+    }
+    .inf li {
+        width: 35%;
+    }
+    .inf li h3 {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width:320px){
     .awssld__wrapper {

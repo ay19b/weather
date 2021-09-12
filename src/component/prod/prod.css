@@ -121,9 +121,6 @@
     .prod .item-prod:nth-child(10) img {
         width: 55rem;
     }
-    .desc >button{
-        margin-left: -3%;
-    }
 }
 @media screen and (max-width:600px){
     .prod .prod-desc {
@@ -135,9 +132,6 @@
     }
     .prod .item-prod:nth-child(10) img {
         width: 55rem;
-    }
-    .desc >button{
-        margin-left: -3%;
     }
 }
 @media screen and (max-width:480px){
