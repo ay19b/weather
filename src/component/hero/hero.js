@@ -13,7 +13,7 @@ function Hero() {
     return (
         <div className="hero">
             <AutoplaySlider
-              play={false}
+              play={true}
               cancelOnInteraction={false}
               interval={3000}
               >
