@@ -1,19 +1,20 @@
-import './App.css'
-import Navbar from './component/navbar/navbar'
-import Hero from './component/hero/hero'
-import Prod from './component/prod/prod'
-import Footer from './component/footer/footer'
-import ScrollToTop from "react-scroll-to-top";
+import './App.css';
+import Background from './components/Background';
+import LeftInfo from './components/LeftInfo.js';
+import Sidebar from './components/sideBar/Sidebar';
+
+// Add photos to github
+// fixed live clock, added dynamic backgrounds, added dynamic weather icons
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Prod />
-      <Footer />
-      <ScrollToTop smooth />
-    </div>
+    <>
+      <section className='container'>
+        <Background />
+        <LeftInfo />
+        <Sidebar />
+      </section>
+    </>
   );
 }
 
