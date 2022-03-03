@@ -23,11 +23,11 @@ const Background = () => {
   // Else: Width >= 650px
   else {
     if (weatherCondition === 'Clear' || weatherCondition === 'Clouds') {
-      documentBody.style.background = `url(${mainClear}) no-repeat center center/cover`;
+      documentBody.style.background = `url(${phoneWarm}) no-repeat center center/cover`;
     }
 
     if (weatherCondition === 'Rain' || weatherCondition === 'Mist') {
-      documentBody.style.background = `url(${mainRainy}) no-repeat center center/cover`;
+      documentBody.style.background = `url(${phoneRainy}) no-repeat center center/cover`;
     }
   }
 

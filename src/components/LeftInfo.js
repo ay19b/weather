@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { WeatherContext } from '../context.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud, faCloudShowersHeavy, faSun, faSmog } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faCloudShowersHeavy, faSun, faSmog,faSnowflake } from '@fortawesome/free-solid-svg-icons';
 
 const LeftInfo = () => {
   const { temperature, city, weatherCondition, hours, minutes, dayOfWeek, date, month, year } = React.useContext(WeatherContext);
@@ -27,6 +27,8 @@ const LeftInfo = () => {
             {weatherCondition === 'Rain' && <FontAwesomeIcon icon={faCloudShowersHeavy} className='weather-icon fa-2x' />}
 
             {weatherCondition === 'Clear' && <FontAwesomeIcon icon={faSun} className='weather-icon fa-2x' />}
+
+            {weatherCondition === 'Snow' && <FontAwesomeIcon icon={faSnowflake} className='weather-icon fa-2x' />}
 
             {weatherCondition === 'Mist' && <FontAwesomeIcon icon={faSmog} className='weather-icon fa-2x' />}
             {/* Clouds, Rain, Clear, Mist */}

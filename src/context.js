@@ -50,7 +50,7 @@ const WeatherProvider = ({ children }) => {
     const response = await axios(`${rootUrl}${city}&units=metric&appid=45e53a2cf19184553b36d00ffbba58b9`).catch((err) => {
       console.log(err);
     });
-
+    console.log(response);
     if (response) {
       const capitalizedCity = capitalizeTheFirstLetterOfEachWord(city);
       setCity(capitalizedCity);

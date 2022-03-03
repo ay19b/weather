@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { WeatherContext } from '../../context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import '../App.css';
+import './style.css';
 
 const Sidebar = () => {
   const { country, humidity, wind, feelsLike, searchCity } = React.useContext(WeatherContext);
