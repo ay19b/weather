@@ -26,6 +26,8 @@ const LeftInfo = () => {
 
             {weatherCondition === 'Rain' && <FontAwesomeIcon icon={faCloudShowersHeavy} className='weather-icon fa-2x' />}
 
+            {weatherCondition === 'Drizzle' && <FontAwesomeIcon icon={faCloudShowersHeavy} className='weather-icon fa-2x' />}
+
             {weatherCondition === 'Clear' && <FontAwesomeIcon icon={faSun} className='weather-icon fa-2x' />}
 
             {weatherCondition === 'Snow' && <FontAwesomeIcon icon={faSnowflake} className='weather-icon fa-2x' />}

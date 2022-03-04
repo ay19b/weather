@@ -1,9 +1,10 @@
 import React from 'react';
 import { WeatherContext } from '../context.js';
-import mainClear from '../images/main-clear.jpeg';
-import mainRainy from '../images/main-rainy.jpg';
-import phoneRainy from '../images/phone-rainy.jpg';
-import phoneWarm from '../images/phone-warm.jpg';
+import clear from '../images/clear.jpg';
+import rain from '../images/rain.jpg';
+import mist from '../images/mist.jpg';
+import cloud from '../images/cloud.jpg';
+import snow from '../images/snow.jpg';
 
 const Background = () => {
   const { weatherCondition } = React.useContext(WeatherContext);
@@ -11,25 +12,26 @@ const Background = () => {
   const documentBody = document.querySelector('body');
 
   // If: Width <= 650px is phone width in css
-  if (window.innerWidth <= 650) {
-    if (weatherCondition === 'Clear' || weatherCondition === 'Clouds') {
-      documentBody.style.background = `url(${phoneWarm}) no-repeat center center/cover`;
+  
+    if (weatherCondition === 'Clear') {
+      documentBody.style.background = `url(${clear}) no-repeat center center/cover`;
     }
 
-    if (weatherCondition === 'Rain' || weatherCondition === 'Mist') {
-      documentBody.style.background = `url(${phoneRainy}) no-repeat center center/cover`;
+    if (weatherCondition === 'Rain' || weatherCondition === 'Drizzle') {
+      documentBody.style.background = `url(${rain}) no-repeat center center/cover`;
     }
-  }
-  // Else: Width >= 650px
-  else {
-    if (weatherCondition === 'Clear' || weatherCondition === 'Clouds') {
-      documentBody.style.background = `url(${phoneWarm}) no-repeat center center/cover`;
+  
+    if (weatherCondition === 'Clouds') {
+      documentBody.style.background = `url(${cloud}) no-repeat center center/cover`;
     }
 
-    if (weatherCondition === 'Rain' || weatherCondition === 'Mist') {
-      documentBody.style.background = `url(${phoneRainy}) no-repeat center center/cover`;
+    if (weatherCondition === 'Mist') {
+      documentBody.style.background = `url(${mist}) no-repeat center center/cover`;
     }
-  }
+    if (weatherCondition === 'snow') {
+      documentBody.style.background = `url(${snow}) no-repeat center center/cover`;
+    }
+  
 
   return <></>;
 };
