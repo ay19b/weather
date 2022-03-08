@@ -17,7 +17,7 @@ const Background = () => {
       documentBody.style.background = `url(${clear}) no-repeat center center/cover`;
     }
 
-    if (weatherCondition === 'Rain' || weatherCondition === 'Drizzle') {
+    if (weatherCondition === 'Rain' || weatherCondition === 'Drizzle' || weatherCondition === 'Thunderstorm') {
       documentBody.style.background = `url(${rain}) no-repeat center center/cover`;
     }
   
