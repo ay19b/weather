@@ -28,7 +28,7 @@ const Background = () => {
     if (weatherCondition === 'Mist') {
       documentBody.style.background = `url(${mist}) no-repeat center center/cover`;
     }
-    if (weatherCondition === 'snow') {
+    if (weatherCondition === 'Snow') {
       documentBody.style.background = `url(${snow}) no-repeat center center/cover`;
     }
   
