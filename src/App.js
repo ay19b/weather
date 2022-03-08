@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <section className='home'>
-        
         <LeftInfo />
         <Sidebar />
         <Background />

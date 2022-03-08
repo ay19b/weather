@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faCloud, faCloudShowersHeavy, faSun, faSmog,faSnowflake } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
-import LeftInfo from '../info/LeftInfo';
 
 const Sidebar = () => {
   const { temperature, city, weatherCondition, hours, minutes, dayOfWeek, date, month, year } = React.useContext(WeatherContext);

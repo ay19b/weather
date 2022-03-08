@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import { WeatherContext } from '../../context.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloud, faCloudShowersHeavy, faSun, faSmog,faSnowflake } from '@fortawesome/free-solid-svg-icons';
