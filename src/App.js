@@ -1,6 +1,6 @@
 import './App.css';
 import Background from './components/Background';
-import Sidebar from './components/sidebar/sidebar';
+import Sidebar from './components/sideBar/Sidebar';
 import LeftInfo from './components/info/LeftInfo.js';
 // Add photos to github
 // fixed live clock, added dynamic backgrounds, added dynamic weather icons
